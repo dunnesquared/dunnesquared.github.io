@@ -76,7 +76,16 @@ th, td {
 }
 
 #stack-list {
-  margin-top: 1.5em;
+  margin-top: 2em;
+}
+#stack-list h5 {
+  font-weight: 700;
+  font-family: cursive;
+  font-size: 1.4em;
+  margin-top: 1em;
+}
+#stack-list ul li {
+  font-family: "Courier New", Courier, monospace;
 }
 
 #convtable-container {

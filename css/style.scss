@@ -42,7 +42,6 @@ nav{
   }
 }
 
-
 table, th, td{
   border: 1px solid black;
 }
@@ -51,6 +50,8 @@ th, td{
   text-align: center;
   padding: 0.5em;
 }
+
+
 
 .center{
   margin:auto; // centers tables and divs in middle of screen
@@ -91,7 +92,20 @@ th, td{
 }
 
 #stack-list{
-  margin-top: 1.5em;
+  margin-top: 2em;
+
+  h5 {
+    font-weight: 700;
+    font-family: cursive;
+    font-size: 1.4em;
+    margin-top: 1em;
+  }
+
+  ul{
+    li{
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
 }
 
 #convtable-container{

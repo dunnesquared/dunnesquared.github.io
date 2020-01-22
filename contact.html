@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+
+    <!-- Project stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>
+      dunnesquared - The personal and professional website of Alex Dunne
+    </title>
+  </head>
+
+  <body>
+    <div class="container pl-4 pr-4 pt-2">
+      <header>
+        <h1 id="main-title"><a href="index.html">dunnesquared</a></h1>
+        <h3 id="sub-heading" class="small-screen">
+          /*** Unteaching the teachable since
+          <span id="tag-line">-93a✍︎!</span> ***/
+        </h3>
+      </header>
+
+      <nav>
+        <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="misc.html" class="nav-link">Misc</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main-content-container">
+
+        <h3>Contact</h3>
+
+        <p>
+          I'm a little wary of posting my email, but feel free to use
+          the form below to get in touch.
+        </p>
+
+        <form action="/contact">
+
+          <div class="form-group">
+            <label for="name_input">Name:</label>
+            <input
+              type="text"
+              class="form-control contact-data"
+              placeholder="Enter name"
+              id="name_input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email_input">Email:</label>
+            <input
+              type="email"
+              class="form-control contact-data"
+              placeholder="Enter email"
+              id="email_input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject_input">Subject:</label>
+            <input
+              type="text"
+              class="form-control contact-data"
+              placeholder="Enter subject"
+              id="subject_input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="text_input">Message:</label>
+            <textarea
+              class="form-control"
+              rows="10"
+              id="text_input">
+            </textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" disabled>Submit</button>
+        </form>
+
+
+      </section>
+    </div>
+
+
+  </body>
+</html>

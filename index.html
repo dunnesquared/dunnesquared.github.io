@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <!-- TODO:-->
 
-<!-- Master template from which other templates are built from -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dunnesquared</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- Boostrap stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
 
-<body>
+    <!-- Project stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 
-  <h2>Under Construction👷🏻‍♀️‍</h2>
+    <title>
+      dunnesquared - The personal website of Alex Dunne
+    </title>
+  </head>
 
-  <p>I hope to have the full website ready as soon as possible. In the
-     mean time, check out some of my
-     <a href="https://github.com/dunnesquared">projects</a>.
-  </p>
+  <body>
+    <!-- Use BS4 container class to make page responsive -->
+    <!-- pl, pr, pt: padding left, right, top (see BS4 doc for what #s mean)-->
+    <!-- Note that grid's 12 columns do not include the surrounding padded
+         space -->
+    <div class="container pl-4 pr-4 pt-2">
 
-  <p>Thank you for your patience!</p>
+      <!-- Banner of website, so to speak -->
+      <header>
+        <h1 id="main-title"><a href="index.html">dunnesquared</a></h1>
 
-  <p><i>AD, 2019-11-15</i></p>
+        <!-- Not that sub-heading disappears for viewports smaller than
+             576 px -->
+        <h3 id="sub-heading" class="small-screen">
+          /*** Unteaching the teachable since
+          <span id="tag-line">-93a✍︎!</span> ***/
+        </h3>
+      </header>
 
-</body>
+      <!-- Navigation bar: use BS4 components nav and nav-pills -->
+      <!-- flex-column: so that menu items are stacked vertically when
+           view port is small.
+           flex-sm-row: so that are spread horizontally when viewport
+           wider than minimum.
+           nav-fill: ensures all items in menu take same horizontal space.
+      -->
+      <nav>
+        <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="misc.html" class="nav-link">Misc</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html"class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
+
+      <main class="main-content-container">
+        <h3>Welcome!</h3>
+
+        <!-- Making use of BS4's grid layout to ensure site changes as a
+             function of viewport (screen) size -->
+        <!-- when viewport's width is
+             - large: ensure that the text takes nine columns, the picture 3
+             - medium: text is eight columns, picture 4 rows
+             - small: text is 6 columns, and so is picture.
+
+             When if viewport becomes as small as in phone, picture will
+             automatically collapse under the text.
+        -->
+        
+        <div class="row">
+          <div class="col-lg-9 col-md-8 col-sm-6">
+            <p>
+              My name is Alex Dunne. I'm a math educator/aspiring Python
+              developer currently focussing on web development.
+              Feel free to roam this site to find out more information
+              about me and my coding projects!
+            </p>
+
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+            <img src="img/yodatoy.jpg" alt="yoda toy">
+          </div>
+        </div>
+    </main>
+
+
+  </body>
 </html>

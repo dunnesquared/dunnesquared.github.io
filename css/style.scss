@@ -1,0 +1,155 @@
+// Although not used repetitively, having these variables makes it easier to
+// quickly experiment with different colours.
+$bodybgcolor: Linen;
+$bodytextcolor: black;
+$navhoverbgcolor: LightSkyBlue; // previously silver
+$navhovertextcolor: black;
+
+body{
+  background-color: $bodybgcolor;
+  color: $bodytextcolor;
+  font-family: Helvetica, sans-serif;
+  font-size: larger;
+}
+
+nav{
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  border-top: solid black;
+  border-bottom: solid black;
+  border-width: thin;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  font-size: 0.9em;
+
+  a{
+    color:$navhovertextcolor;
+  }
+
+  li{
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    color: black;
+  }
+
+  li:hover{
+    background-color: $navhoverbgcolor;
+    border-radius: 4px;
+
+    a{
+      color: black;
+    }
+  }
+}
+
+
+table, th, td{
+  border: 1px solid black;
+}
+
+th, td{
+  text-align: center;
+  padding: 0.5em;
+}
+
+.center{
+  margin:auto; // centers tables and divs in middle of screen
+}
+
+.main-content-container{
+  margin-top: 1em;
+
+}
+
+.main-text{
+  margin-top: 1em;
+}
+
+.contact-data{
+  width: 90%;
+}
+
+#main-title{
+  a{
+    color: $bodytextcolor;
+    &:hover{
+      color:$bodytextcolor;
+      text-decoration: none;
+    }
+    &:visited{
+      color:$bodytextcolor;
+    }
+  }
+}
+
+#tag-line{
+  font-family: math;
+}
+
+#sub-heading{
+  font-size: 1em;
+}
+
+#stack-list{
+  margin-top: 1.5em;
+}
+
+#convtable-container{
+  width: 100%; // required to center table
+  height: 100%; // required to center table
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+
+  p{
+    margin-top: 0.5em;
+    font-size: 0.8em;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .small-screen{
+    display: None;
+  }
+}
+
+%flagbar{
+  font-family: cursive;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50%;
+
+  @media (max-width: 800px) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 0.7em;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 0.5em;
+  }
+
+}
+
+.topbar{
+  @extend %flagbar;
+  color: white;
+  background-color: green;
+}
+
+.middlebar{
+  @extend %flagbar;
+  color: black;
+  background-color: white;
+
+}
+
+.bottombar{
+  @extend %flagbar;
+  color: white;
+  background-color: red;
+}

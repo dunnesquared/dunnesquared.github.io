@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+
+    <!-- Project stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>
+      dunnesquared - The personal and professional website of Alex Dunne
+    </title>
+  </head>
+
+  <body>
+    <div class="container pl-4 pr-4 pt-2">
+      <header>
+        <h1 id="main-title"><a href="index.html">dunnesquared</a></h1>
+        <h3 id="sub-heading" class="small-screen">
+          /*** Unteaching the teachable since
+          <span id="tag-line">-93a✍︎!</span> ***/
+        </h3>
+      </header>
+
+      <!--<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">-->
+      <nav>
+        <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="misc.html" class="nav-link">Misc</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html"class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main-content-container">
+
+          <h3>Projects</h3>
+
+          <section class="main-text">
+
+            <div><h4>Sentence Cow</h4></div>
+
+            <p>
+              Sentence Cow is a Flask-based web tool that extracts
+              sentences from a text, or at least tries to as best as possible
+              (it's not a bad word- and character- counter either). It doesn't
+              use any NLP algorithms to detect sentences–just a lot
+              regular expressions and condition-checking.
+            </p>
+
+            <p>
+              As intimated, Sentence Cow doesn't always get it right, sometimes
+              detecting a sentence where it shouldn't or not detecting one
+              where it should. No problem—users can fix either of these problems
+              by using the provided 'split' or 'merge' tools to divide or
+              join strings, respectively.
+            </p>
+
+            <p>
+              Tech used: Python 3.6, HTML, CSS, JavaScript ES6, Flask,
+              Jinja2, nose (testing framework), pylint
+            </p>
+
+            <p>Links</p>
+            <ul>
+              <li>
+                <a href="https://zaxel9.pythonanywhere.com/sentencecow">
+                  Try it live!
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/dunnesquared/sentencecow">
+                  See the repo.
+                </a>
+              </li>
+
+            </ul>
+
+            <p>Snapshots
+            <ul>
+              <li><a href="img/cow-input.jpeg" target="_blank">Input</a></li>
+              <li><a href="img/cow-output.jpeg" target="_blank">Output</a></li>
+              <li>
+                <a href="img/cow-mergesplit.jpeg" target="_blank">
+                Merge/split tools
+                </a>
+              </li>
+            </ul>
+
+
+          </section>
+
+      </main>
+    </div>
+
+
+  </body>
+</html>

@@ -1,4 +1,136 @@
-body{
-  font-family: "Helvetica Neue", "Arial", "sans-serif";
-  background-color: rgb(255,240,210);
+body {
+  background-color: Linen;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: larger;
 }
+
+nav {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  border-top: solid black;
+  border-bottom: solid black;
+  border-width: thin;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  font-size: 0.9em;
+}
+nav a {
+  color: black;
+}
+nav li {
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+  color: black;
+}
+nav li:hover {
+  background-color: LightSkyBlue;
+  border-radius: 4px;
+}
+nav li:hover a {
+  color: black;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.center {
+  margin: auto;
+}
+
+.main-content-container {
+  margin-top: 1em;
+}
+
+.main-text {
+  margin-top: 1em;
+}
+
+.contact-data {
+  width: 90%;
+}
+
+#main-title a {
+  color: black;
+}
+#main-title a:hover {
+  color: black;
+  text-decoration: none;
+}
+#main-title a:visited {
+  color: black;
+}
+
+#tag-line {
+  font-family: math;
+}
+
+#sub-heading {
+  font-size: 1em;
+}
+
+#stack-list {
+  margin-top: 1.5em;
+}
+
+#convtable-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+#convtable-container p {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+}
+
+@media (max-width: 576px) {
+  .small-screen {
+    display: None;
+  }
+}
+.bottombar, .middlebar, .topbar {
+  font-family: cursive;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .bottombar, .middlebar, .topbar {
+    font-size: 1em;
+  }
+}
+@media (max-width: 490px) {
+  .bottombar, .middlebar, .topbar {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 320px) {
+  .bottombar, .middlebar, .topbar {
+    font-size: 0.5em;
+  }
+}
+
+.topbar {
+  color: white;
+  background-color: green;
+}
+
+.middlebar {
+  color: black;
+  background-color: white;
+}
+
+.bottombar {
+  color: white;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

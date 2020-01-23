@@ -63,6 +63,10 @@ th, td {
   font-weight: bold;
 }
 
+.tech {
+  font-family: "Courier New", Courier, monospace;
+}
+
 #main-title a {
   color: black;
 }

@@ -5,6 +5,10 @@ body {
   font-size: larger;
 }
 
+main {
+  padding-bottom: 1em;
+}
+
 nav {
   margin-top: 1em;
   margin-bottom: 1.5em;

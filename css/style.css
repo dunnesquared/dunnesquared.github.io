@@ -115,6 +115,10 @@ th, td {
   font-size: 0.8em;
 }
 
+#project-menu{
+  margin-top: 1em;
+}
+
 @media (max-width: 576px) {
   .small-screen {
     display: None;

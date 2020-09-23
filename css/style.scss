@@ -1,6 +1,6 @@
 // Although not used repetitively, having these variables makes it easier to
 // quickly experiment with different colours.
-$bodybgcolor: Linen;
+$bodybgcolor: rgb(250, 245, 241);
 $bodytextcolor: black;
 $navhoverbgcolor: LightSkyBlue; // previously silver
 $navhovertextcolor: black;
@@ -8,7 +8,7 @@ $navhovertextcolor: black;
 body{
   background-color: $bodybgcolor;
   color: $bodytextcolor;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: larger;
 }
 

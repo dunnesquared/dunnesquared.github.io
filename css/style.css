@@ -1,12 +1,8 @@
 body {
-  background-color: Linen;
+  background-color: #faf5f1;
   color: black;
-  font-family: Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: larger;
-}
-
-main {
-  padding-bottom: 1em;
 }
 
 nav {
@@ -115,10 +111,6 @@ th, td {
   font-size: 0.8em;
 }
 
-#project-menu{
-  margin-top: 1em;
-}
-
 @media (max-width: 576px) {
   .small-screen {
     display: None;
@@ -159,10 +151,6 @@ th, td {
 .bottombar {
   color: white;
   background-color: red;
-}
-
-#edx{
-  margin-top: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

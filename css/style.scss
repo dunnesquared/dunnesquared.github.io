@@ -133,22 +133,14 @@ th, td{
   }
 }
 
-
-
 @media (max-width: 576px) {
   .small-screen{
     display: None;
   }
-
-  // #yoda{
-  //   display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 }
 
 @media (max-width: 768px) {
-
+  // Centers Yoda image in BS 'md' column area when viewport < 768px (md == 768px). 
   #yoda{
     display: block;
     margin-left: auto;

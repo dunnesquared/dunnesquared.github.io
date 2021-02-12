@@ -1,61 +1,58 @@
-// Although not used repetitively, having these variables makes it easier to
-// quickly experiment with different colours.
-$bodybgcolor: rgb(250, 245, 241);
-$bodytextcolor: black;
-$navhoverbgcolor: LightSkyBlue; // previously silver
-$navhovertextcolor: black;
+// Sass variables
+$bodybgcolor: black;
+$bodytextcolor: white;
+$linecolor: white;
+$navhoverbgcolor:rgb(250, 50, 150); //rgb(15, 80, 110)
+$navtextcolor:white;
+$navhovertextcolor: white;
+$fontfamily: Helvetica, Arial, sans-serif;
+$fontsize: medium;
+$fontsizelists: smaller;
+$anchorcolor: lime;
 
-body{
+body {
   background-color: $bodybgcolor;
   color: $bodytextcolor;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: larger;
-}
+  font-family: $fontfamily;
+  font-size:  $fontsize;
 
-nav{
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-  border-top: solid black;
-  border-bottom: solid black;
-  border-width: thin;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  font-size: 0.9em;
-
-  a{
-    color:$navhovertextcolor;
-  }
-
-  li{
-    margin-left: 0.6em;
-    margin-right: 0.6em;
-    color: black;
-  }
-
-  li:hover{
-    background-color: $navhoverbgcolor;
-    border-radius: 4px;
-
-    a{
-      color: black;
+  a {
+    color: $anchorcolor;
+    &:hover{
+      color: $anchorcolor;
     }
   }
 }
 
-table, th, td{
-  border: 1px solid black;
-}
+nav{
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    border-top: solid $linecolor;
+    border-bottom: solid $linecolor;
+    border-width: thin;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 0.9em;
 
-th, td{
-  text-align: center;
-  padding: 0.5em;
-}
+    a{
+      color: $navtextcolor;
+      &:hover{
+        color: $navhovertextcolor;
+      }
+    }
 
+    li{
+      margin-left: 0.6em;
+      margin-right: 0.6em;
+    }
 
+    li:hover{
+      border-width: thin;
+      background-color: $navhoverbgcolor;
+      border-radius: 20px;
+    }
+  }
 
-.center{
-  margin:auto; // centers tables and divs in middle of screen
-}
 
 .main-content-container{
   margin-top: 1em;
@@ -78,9 +75,10 @@ th, td{
 }
 
 .tech {
-  font-family: "Courier New", Courier, monospace;
-}
+  font-family: $fontfamily;
+  font-size: $fontsizelists;
 
+}
 
 #main-title{
   a{
@@ -95,9 +93,6 @@ th, td{
   }
 }
 
-#tag-line{
-  font-family: math;
-}
 
 #sub-heading{
   font-size: 1em;
@@ -108,28 +103,16 @@ th, td{
 
   h5 {
     font-weight: 200;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $fontfamily;
     font-size: 1.2em;
     margin-top: 1em;
   }
 
   ul{
     li{
-      font-family: "Courier New", Courier, monospace;
+      font-family: $fontfamily;
+      font-size: $fontsizelists;
     }
-  }
-}
-
-#convtable-container{
-  width: 100%; // required to center table
-  height: 100%; // required to center table
-  margin-top: 2em;
-  margin-bottom: 1em;
-  text-align: center;
-
-  p{
-    margin-top: 0.5em;
-    font-size: 0.8em;
   }
 }
 
@@ -146,43 +129,4 @@ th, td{
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-%flagbar{
-  font-family: cursive;
-  text-align: center;
-  font-size: 1.5em;
-  width: 50%;
-
-  @media (max-width: 800px) {
-    font-size: 1em;
-  }
-
-  @media (max-width: 490px) {
-    font-size: 0.7em;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 0.5em;
-  }
-
-}
-
-.topbar{
-  @extend %flagbar;
-  color: white;
-  background-color: green;
-}
-
-.middlebar{
-  @extend %flagbar;
-  color: black;
-  background-color: white;
-
-}
-
-.bottombar{
-  @extend %flagbar;
-  color: white;
-  background-color: red;
 }

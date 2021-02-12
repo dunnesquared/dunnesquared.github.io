@@ -1,6 +1,6 @@
 body {
-  background-color: #faf5f1;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: "Times New Roman", Times, serif;
   font-size: larger;
 }
@@ -8,15 +8,15 @@ body {
 nav {
   margin-top: 1em;
   margin-bottom: 1.5em;
-  border-top: solid black;
-  border-bottom: solid black;
+  border-top: solid white;
+  border-bottom: solid white;
   border-width: thin;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   font-size: 0.9em;
 }
 nav a {
-  color: black;
+  color: white;
 }
 nav li {
   margin-left: 0.6em;
@@ -24,7 +24,7 @@ nav li {
   color: black;
 }
 nav li:hover {
-  background-color: LightSkyBlue;
+  background-color: grey;
   border-radius: 4px;
 }
 nav li:hover a {
@@ -32,7 +32,7 @@ nav li:hover a {
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 th, td {
@@ -68,14 +68,14 @@ th, td {
 }
 
 #main-title a {
-  color: black;
+  color: white;
 }
 #main-title a:hover {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 #main-title a:visited {
-  color: black;
+  color: white;
 }
 
 #tag-line {

@@ -1,9 +1,10 @@
 // Although not used repetitively, having these variables makes it easier to
 // quickly experiment with different colours.
-$bodybgcolor: rgb(250, 245, 241);
-$bodytextcolor: black;
-$navhoverbgcolor: LightSkyBlue; // previously silver
-$navhovertextcolor: black;
+$bodybgcolor: black;
+$bodytextcolor: white;
+$linecolor: white;
+$navhoverbgcolor: grey; // previously silver
+$navhovertextcolor: white;
 
 body{
   background-color: $bodybgcolor;
@@ -15,8 +16,8 @@ body{
 nav{
   margin-top: 1em;
   margin-bottom: 1.5em;
-  border-top: solid black;
-  border-bottom: solid black;
+  border-top: solid $linecolor;
+  border-bottom: solid $linecolor;
   border-width: thin;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
@@ -43,7 +44,7 @@ nav{
 }
 
 table, th, td{
-  border: 1px solid black;
+  border: 1px solid $linecolor;
 }
 
 th, td{

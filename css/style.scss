@@ -1,17 +1,13 @@
-// Although not used repetitively, having these variables makes it easier to
-// quickly experiment with different colours.
+// Sass variables
 $bodybgcolor: black;
 $bodytextcolor: white;
 $linecolor: white;
-
 $navhoverbgcolor:rgb(250, 50, 150); //rgb(15, 80, 110)
 $navtextcolor:white;
 $navhovertextcolor: white;
-
 $fontfamily: Helvetica, Arial, sans-serif;
 $fontsize: medium;
 $fontsizelists: smaller;
-
 $anchorcolor: lime;
 
 body {
@@ -84,7 +80,6 @@ nav{
 
 }
 
-
 #main-title{
   a{
     color: $bodytextcolor;
@@ -98,9 +93,6 @@ nav{
   }
 }
 
-#tag-line{
-  font-family: math;
-}
 
 #sub-heading{
   font-size: 1em;
@@ -123,8 +115,6 @@ nav{
     }
   }
 }
-
-
 
 @media (max-width: 576px) {
   .small-screen{

@@ -1,8 +1,8 @@
 body {
   background-color: black;
   color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: medium;
+  font-size: larger;
+  font-family: Helvetica, Arial, sans-serif
 }
 
 nav {
@@ -21,14 +21,14 @@ nav a {
 nav li {
   margin-left: 0.6em;
   margin-right: 0.6em;
-  color: black;
 }
 nav li:hover {
-  background-color: grey;
+  border: solid white;
+  border-width: thin;
   border-radius: 4px;
 }
 nav li:hover a {
-  color: black;
+  color: white;
 }
 
 table, th, td {
@@ -64,8 +64,7 @@ th, td {
 }
 
 .tech {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: smaller;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #main-title a {
@@ -92,13 +91,12 @@ th, td {
 }
 #stack-list h5 {
   font-weight: 200;
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: "Times New Roman", Times, serif; */
   font-size: 1.2em;
   margin-top: 1em;
 }
 #stack-list ul li {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: smaller;
+  /* font-family: "Courier New", Courier, monospace; */
 }
 
 #convtable-container {

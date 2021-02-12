@@ -5,12 +5,16 @@ $bodytextcolor: white;
 $linecolor: white;
 $navhoverbgcolor: grey; // previously silver
 $navhovertextcolor: white;
+$fontfamily: Helvetica, Arial, sans-serif;
+$fontsize: medium;
+$fontsizelists: smaller;
+
 
 body{
   background-color: $bodybgcolor;
   color: $bodytextcolor;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: larger;
+  font-family: $fontfamily;
+  font-size:  $fontsize;
 }
 
 nav{
@@ -79,7 +83,9 @@ th, td{
 }
 
 .tech {
-  font-family: "Courier New", Courier, monospace;
+  font-family: $fontfamily;
+  font-size: $fontsizelists;
+
 }
 
 
@@ -109,14 +115,15 @@ th, td{
 
   h5 {
     font-weight: 200;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $fontfamily;
     font-size: 1.2em;
     margin-top: 1em;
   }
 
   ul{
     li{
-      font-family: "Courier New", Courier, monospace;
+      font-family: $fontfamily;
+      font-size: $fontsizelists;
     }
   }
 }

@@ -3,18 +3,30 @@
 $bodybgcolor: black;
 $bodytextcolor: white;
 $linecolor: white;
+
 $navhoverbgcolor: grey; // previously silver
 $navhovertextcolor: white;
+
 $fontfamily: Helvetica, Arial, sans-serif;
 $fontsize: medium;
 $fontsizelists: smaller;
 
+$anchorcolor: lime;
 
 body{
   background-color: $bodybgcolor;
   color: $bodytextcolor;
   font-family: $fontfamily;
   font-size:  $fontsize;
+
+  a {
+    color: $anchorcolor;
+    &:hover{
+      color: $anchorcolor;
+    }
+  }
+
+ 
 }
 
 nav{

@@ -97,9 +97,9 @@ nav li:hover {
 }
 @media (max-width: 768px) {
   #yoda {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: block; 
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 }
 

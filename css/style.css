@@ -1,7 +1,8 @@
 body {
   background-color: white;
   color: black;
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
   font-size: medium;
 }
 body a {

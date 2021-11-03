@@ -39,8 +39,9 @@
 
       <!-- Banner of website, so to speak -->
       <header>
-        <h1 id="main-title"><a href="index.html">dunnesquared</a></h1>
-
+        <h1 id="main-title">
+          <a href="index.html">dunnesquared</a>
+        </h1>
         <!-- Not that sub-heading disappears for viewports smaller than
              576 px -->
         <h3 id="sub-heading" class="small-screen">
@@ -57,9 +58,6 @@
       -->
       <nav>
         <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
-          <!-- <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li> -->
           <li class="nav-item">
             <a href="#coding-projects" class="nav-link">Coding Projects</a>
           </li>
@@ -76,14 +74,8 @@
       <main class="main-content-container">
         <!-- Making use of BS4's grid layout to ensure site changes as a
              function of viewport (screen) size -->
-        <!-- when viewport's width is
-             - large: ensure that the text takes nine columns, the picture 3
-             - medium: text is eight columns, picture 4 rows
-             - small: text is 6 columns, and so is picture.
-
-             When if viewport becomes as small as in phone, picture will
-             automatically collapse under the text.
-        -->
+        
+        <!-- WELCOME -->
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <h3>Welcome!</h3>
@@ -105,6 +97,7 @@
                 design interest me too.</p>
           </div>
         </div>
+
         <div class="row">
           <div  class="col-lg-12 col-md-12 col-sm-12">
             <img id="yoda" src="img/yodatoy.jpg" alt="Yoda toy" title="Yoda toy, not baby Yoda">
@@ -120,14 +113,16 @@
         </div>
         <div class="row">
           <div id="coding-projects" class="col-lg-12 col-md-12 col-sm-12">
-            <div>For past web projects, I've tended to use Flask and sqlite on the backend; HTML, 
-              CSS, and JavaScript for the frontend. I'm currently
+            <div>
+              For past web projects, I've tended to use Flask and sqlite on the backend; 
+              HTML, CSS, and JavaScript for the frontend. I'm currently
               working on projects using Django, React and Docker, 
               which I hope to share soon.</div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
+
             <section>
               <div>
                   <strong>Cinescout 🎞</strong>
@@ -137,7 +132,6 @@
                     <a href="https://github.com/dunnesquared/cinescout">repo</a>)
                   </small>
                   <div>
-                    
                       IMDB-like website where users can learn about films and read movie reviews
                       thanks to API data from <a href="https://www.themoviedb.org/", target="_blank">
                         The Movie Database</a> and
@@ -145,58 +139,54 @@
                         Users can also browse through a list of critically-acclaimed films from
                         <a href="https://criterion.com" target="_blank">The Criterion Collection</a>, 
                         as well as save movies to a 'What-To-Watch' list for later reference.
-                     
                     </div>
                 </div>
 
+                <div>
+                  <strong>Sentence Cow 🐄</strong>
+                  <small>
+                    (<a href="https://zaxel9.pythonanywhere.com/sentencecow">demo</a> /
+                    <a href="https://github.com/dunnesquared/sentencecow">repo</a>)
+                  </small>
                   <div>
-                    <strong>Sentence Cow 🐄</strong>
-                    <small>
-                      (<a href="https://zaxel9.pythonanywhere.com/sentencecow">demo</a> /
-                      <a href="https://github.com/dunnesquared/sentencecow">repo</a>)
-                    </small>
-                    <div>
-                        Web tool that extracts sentences from a text.
-                      </div>
+                      Web tool that extracts sentences from a text.
                   </div>
+                </div>
 
+                <div>
+                  <strong>Shadow House 👻</strong>
+                  <small>
+                    (<a href="https://github.com/dunnesquared/shadowhouse">repo</a>)
+                  </small>
                   <div>
-                    <strong>Shadow House 👻</strong>
-                    <small>
-                      (<a href="https://github.com/dunnesquared/shadowhouse">repo</a>)
-                    </small>
-                    <div>
-                     
-                        A mini text game of a supernatural persuasion.
-                        
-                      </div>
+                      A mini text game of a supernatural persuasion.
                   </div>
+                </div>
                 
+                <div>
+                  <strong>sqlite3backup 📀</strong>
+                  <small>
+                    (<a href="https://github.com/dunnesquared/sqlite3backup">repo</a>)
+                  </small>
                   <div>
-                    <strong>sqlite3backup 📀</strong>
-                    <small>
-                      (<a href="https://github.com/dunnesquared/sqlite3backup">repo</a>)
-                    </small>
-                    <div>
-                      
-                        Python script and module that backs up an sqlite3 database file using 
-                        sqlite3's
-                        <a href="https://docs.python.org/3.8/library/sqlite3.html" target="_blank">
-                          backup</a> function.
-                        
-                      </div>
+                      Python script and module that backs up an sqlite3 database file using 
+                      sqlite3's
+                      <a href="https://docs.python.org/3.8/library/sqlite3.html" 
+                        target="_blank">
+                        backup</a> function.
                   </div>
-  
+                </div>
             </section>
           
          <!--Writing Projects-->
-         <div class="row">
+        <div class="row">
           <div id="writing-projects" class="col-lg-12 col-md-12 col-sm-12">
             <h3>Writing Projects</h3>
           </div>
         </div>
-         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
             <section>
               <div>
                   <strong>Mathwoods 🌲</strong>
@@ -213,11 +203,12 @@
         </div>
 
           <!--Contact-->
-         <div class="row">
+        <div class="row">
           <div id="contact-info" class="col-lg-12 col-md-12 col-sm-12">
             <h3>Contact Info</h3>
           </div>
         </div>
+        
         <div class="row">
           <div id="contact-info" class="col-lg-12 col-md-12 col-sm-12">
             <div>
@@ -228,6 +219,7 @@
             </div>
           </div>
         </div>
+
          <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
               <section>
@@ -241,14 +233,10 @@
                   💼 <a href="https://www.linkedin.com/in/alexander-dunne-4960235a/">LinkedIn</a>
                 </div>   
               </section>
+            </div>
           </div>
-        </div>
-
-          
-        </div>
-      </div>
-     </div>
     </main>
-    <br>
+  </div>
+  <br>
   </body>
 </html>

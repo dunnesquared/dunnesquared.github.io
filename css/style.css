@@ -104,4 +104,15 @@ nav li:hover {
   }
 }
 
+#project-items {
+  margin-top: 1em;
+}
+
+.project-item {
+  margin-top: 1em;
+}
+
+#contact-items {
+  margin-top: 1em;
+}
 /*# sourceMappingURL=style.css.map */

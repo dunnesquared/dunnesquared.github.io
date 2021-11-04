@@ -21,6 +21,11 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous">
+    
+     <!-- JS, Popper.js, and jQuery -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- Project stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -37,18 +42,6 @@
          space -->
     <div class="container-fluid pl-4 pr-4 pt-2">
 
-      <!-- Banner of website, so to speak -->
-      <header>
-        <h1 id="main-title">
-          <a href="index.html">dunnesquared</a>
-        </h1>
-        <!-- Not that sub-heading disappears for viewports smaller than
-             576 px -->
-        <h3 id="sub-heading" class="small-screen">
-          /*** Math Educator / Aspiring Python Developer ***/ 
-        </h3>
-      </header>
-
       <!-- Navigation bar: use BS4 components nav and nav-pills -->
       <!-- flex-column: so that menu items are stacked vertically when
            view port is small.
@@ -56,19 +49,35 @@
            wider than minimum.
            nav-fill: ensures all items in menu take same horizontal space.
       -->
-      <nav>
-        <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
-          <li class="nav-item">
-            <a href="#coding-projects" class="nav-link">Coding Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#writing-projects" class="nav-link">Writing Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact-info"class="nav-link">Contact Info</a>
-          </li>
-        </ul>
-      </nav>
+      <nav id="mynavbar" class="navbar navbar-expand-lg navbar-light  border-bottom" style="background-color: white">
+        <a class="navbar-brand" href="#">
+           <h1>dunnesquared</h1>
+         </a>
+        <!-- Collapsible menu button on reduced viewports, e.g. phones -->
+           <button
+             class="navbar-toggler"
+             type="button"
+             data-toggle="collapse"
+             data-target="#navbarNav"
+             aria-controls="navbarNav"
+             aria-expanded="false"
+             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+       <div class="collapse navbar-collapse " id="navbarNav">
+         <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+           <li class="nav-item">
+             <a href="#coding-projects" class="nav-link">Coding Projects</a>
+           </li>
+           <li class="nav-item">
+             <a href="#writing-projects" class="nav-link">Writing Projects</a>
+           </li>
+           <li class="nav-item">
+             <a href="#contact-info"class="nav-link">Contact Info</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+
 
 
       <main class="main-content-container">

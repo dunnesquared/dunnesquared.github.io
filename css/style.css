@@ -34,7 +34,7 @@ nav li {
 }
 nav li:hover {
   border-width: thin;
-  background-color:lightgray;
+  background-color:darkslategray;
   border-radius: 20px;
 }
 

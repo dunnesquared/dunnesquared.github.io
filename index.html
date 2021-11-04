@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+  <!-- *************************** META, LINKS, SCRIPTS, TITLE  *************************** -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,9 @@
 
      <!-- SEO --->
      <meta name="author" content="Alex Dunne">
-     <meta name="description" content="Math Educator / Aspiring Python Developer.">
+     <meta 
+      name="description" content="Alex Dunne's Personal Website. Math Educator. Aspiring
+      Python Software Developer.">
 
     <!-- Boostrap stylesheet -->
     <link
@@ -21,33 +24,34 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous">
+    
+     <!-- JS, Popper.js, and jQuery: for collapseable menue -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+             crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+             crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+             crossorigin="anonymous"></script>
 
     <!-- Project stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>
-      dunnesquared::home
+      dunnesquared | Alex Dunne's Personal Website
     </title>
   </head>
 
+  <!-- *************************** PAGE CONTENTS  *************************** -->
   <body>
     <!-- Use BS4 container class to make page responsive -->
     <!-- pl, pr, pt: padding left, right, top (see BS4 doc for what #s mean)-->
-    <!-- Note that grid's 12 columns do not include the surrounding padded☁︎
-         space -->
+    <!-- Note that grid's 12 columns do not include the surrounding padded space -->
     <div class="container-fluid pl-4 pr-4 pt-2">
 
-      <!-- Banner of website, so to speak -->
-      <header>
-        <h1 id="main-title"><a href="index.html">dunnesquared</a></h1>
-
-        <!-- Not that sub-heading disappears for viewports smaller than
-             576 px -->
-        <h3 id="sub-heading" class="small-screen">
-          /*** Math Educator / Aspiring Python Developer ***/ 
-        </h3>
-      </header>
-
+      <!-- *************************** NAVBAR *************************** -->
       <!-- Navigation bar: use BS4 components nav and nav-pills -->
       <!-- flex-column: so that menu items are stacked vertically when
            view port is small.
@@ -55,64 +59,224 @@
            wider than minimum.
            nav-fill: ensures all items in menu take same horizontal space.
       -->
-      <nav>
-        <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="misc.html" class="nav-link">Misc</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html"class="nav-link">Contact</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark border-bottom" style="background-color: teal">
+        
+        <!-- navbrand -->
+        <a class="navbar-brand" href="#">
+           <span id="mynavbar-title">💾 dunnesquared</span>
+         </a>
+
+        <!-- Collapsible menu button on reduced viewports, e.g. phones -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+            <li class="nav-item">
+              <a href="#coding-projects" class="nav-link text-white">Coding Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#writing-projects" class="nav-link text-white">Writing Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-info"class="nav-link text-white">Contact Info</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
 
+     <!-- *************************** BODY TEXT *************************** -->
       <main class="main-content-container">
-        <h3>Welcome!</h3>
-
         <!-- Making use of BS4's grid layout to ensure site changes as a
              function of viewport (screen) size -->
-        <!-- when viewport's width is
-             - large: ensure that the text takes nine columns, the picture 3
-             - medium: text is eight columns, picture 4 rows
-             - small: text is 6 columns, and so is picture.
-
-             When if viewport becomes as small as in phone, picture will
-             automatically collapse under the text.
-        -->
+        
+        <!-- *************************** WELCOME *************************** -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>Welcome!</h3>
+          </div>
+        </div>
 
         <div class="row">
-          <div class="col-lg-9 col-md-8 col-sm-7">
+          <div class="col-lg-12 col-md-12 col-sm-12">
             <p>
               My name is Alex Dunne. I'm a math educator transitioning into a career as a
               software developer.</p> 
               
               <p>My preferred programming 
-              language is Python. I've used it to write
+              language is <strong>Python</strong>. I've used it to write
               <a href="https://github.com/dunnesquared">scripts, games and
-                web applications</a>.  My current focus is learning how to build sites and APIs with
-                <a href="https://flask.palletsprojects.com/">Flask</a>,
-                but I am curious about using Python for automation, data engineering and AI, too.
-            </p>
-
-            <p>
-              Check out this site to learn more about me and my projects!
-            </p>
-
-          </div>
-          <div  class="col-lg-3 col-md-4 col-sm-5 text-left">
-            <img id="yoda" src="img/yodatoy.jpg" alt="Yoda toy" title="Yoda toy, not baby Yoda">
+                web applications</a>. I'm curious about where programming intersects mathematics, 
+                education, medicine, research, journalism, gaming, 
+                good causes and the arts. Data privacy and human-factors
+                design interest me too.</p>
           </div>
         </div>
-    </main>
+
+        <div class="row">
+          <div  class="col-lg-12 col-md-12 col-sm-12">
+            <img src="img/yodatoy.jpg" alt="Yoda toy" title="Yoda toy, not baby Yoda">
+         </div>
+        </div>
+      
+        <!-- *************************** CODING PROJECTS *************************** -->
+        <div id="coding-projects" class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>Coding Projects</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div>
+              For past web projects, I've tended to use Flask and sqlite on the backend; 
+              HTML, CSS, and JavaScript for the frontend. I'm currently
+              working on projects using Django, React and Docker, 
+              which I hope to share soon.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+
+            <section id="project-items">
+
+              <div class="project-item">
+                <strong>Cinescout 🎞</strong>
+                <small>
+                  (<a href="https://dunnesquared.pythonanywhere.com/">demo</a> /
+                  <a href="https://vimeo.com/513508836">screencast</a> /
+                  <a href="https://github.com/dunnesquared/cinescout">repo</a>)
+                </small>
+                <div>
+                    IMDB-like website where users can learn about films and read movie reviews
+                    thanks to API data from <a href="https://www.themoviedb.org/", target="_blank">
+                      The Movie Database</a> and
+                      <a href="https://nytimes.com" target="_blank"> The New York Times.</a>
+                      Users can also browse through a list of critically-acclaimed films from
+                      <a href="https://criterion.com" target="_blank">The Criterion Collection</a>, 
+                      as well as save movies to a 'What-To-Watch' list for later reference.
+                </div>
+              </div>
+
+              <div class="project-item">  
+                <strong>Sentence Cow 🐄</strong>
+                <small>
+                  (<a href="https://zaxel9.pythonanywhere.com/sentencecow">demo</a> /
+                  <a href="https://github.com/dunnesquared/sentencecow">repo</a>)
+                </small>
+                <div>
+                    Web tool that extracts sentences from a text.
+                </div>
+              </div>
+
+              <div class="project-item">
+                <strong>Shadow House 👻</strong>
+                <small>
+                  (<a href="https://github.com/dunnesquared/shadowhouse">repo</a>)
+                </small>
+                <div>
+                    A mini text game of a supernatural persuasion.
+                </div>
+              </div>
+                
+              <div class="project-item">
+                <strong>sqlite3backup 📀</strong>
+                <small>
+                  (<a href="https://github.com/dunnesquared/sqlite3backup">repo</a>)
+                </small>
+                <div>
+                    Python script and module that backs up an sqlite3 database file using 
+                    sqlite3's
+                    <a href="https://docs.python.org/3.8/library/sqlite3.html" 
+                      target="_blank">
+                      backup</a> function.
+                </div>
+              </div>
+
+              <div class="project-item">
+                <div>
+                    and
+                    <a href="https://github.com/dunnesquared" target="_blank">more...</a>.
+                </div>
+              </div>
+
+            </section>
+
+          </div>
+        </div>
+          
+        <!-- *************************** WRITING PROJECTS *************************** -->
+        <div id="writing-projects" class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>Writing Projects</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <section>
+              <div>
+                <strong>Mathwoods 🌲</strong>
+                <small>
+                  (<a href="https://mathwoods.com/">blog</a>)
+                </small>
+                <div>
+                  My old blog about math and progamming I kept up for about a year or two. 
+                  Read my posts on struggles with the obvious and mathing in Python.
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- *************************** CONTACT  *************************** -->
+        <div id="contact-info" class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>Contact Info</h3>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div>
+              Please feel free to contact me regarding any professional 
+              opportunities you think I might be a good fit for. Although most of my
+              experience so far has been in web development, 
+              I am open to opportunities in automation, data science and AI.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <section id="contact-items">
+              <div>
+                📬 <a href="mailto:dunnesquared@gmail.com">Email</a>
+              </div>
+              <div>
+                👾 <a href="https://github.com/dunnesquared">GitHub</a>
+              </div>
+              <div>
+                💼 <a href="https://www.linkedin.com/in/alexander-dunne-4960235a/">LinkedIn</a>
+              </div>   
+            </section>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
     <br>
 
-
   </body>
+
 </html>

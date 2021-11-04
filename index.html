@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+  <!-- *************************** META, LINKS, SCRIPTS, TITLE  *************************** -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,26 +23,33 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous">
     
-     <!-- JS, Popper.js, and jQuery -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     <!-- JS, Popper.js, and jQuery: for collapseable menue -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+             crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+             crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+             crossorigin="anonymous"></script>
 
     <!-- Project stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>
-      dunnesquared::home
+      dunnesquared::alexdunne
     </title>
   </head>
 
+  <!-- *************************** PAGE CONTENTS  *************************** -->
   <body>
     <!-- Use BS4 container class to make page responsive -->
     <!-- pl, pr, pt: padding left, right, top (see BS4 doc for what #s mean)-->
-    <!-- Note that grid's 12 columns do not include the surrounding padded☁︎
-         space -->
+    <!-- Note that grid's 12 columns do not include the surrounding padded space -->
     <div class="container-fluid pl-4 pr-4 pt-2">
 
+      <!-- *************************** NAVBAR *************************** -->
       <!-- Navigation bar: use BS4 components nav and nav-pills -->
       <!-- flex-column: so that menu items are stacked vertically when
            view port is small.
@@ -50,41 +58,45 @@
            nav-fill: ensures all items in menu take same horizontal space.
       -->
       <nav id="mynavbar" class="navbar navbar-expand-lg navbar-dark border-bottom" style="background-color: teal">
+        
+        <!-- navbrand -->
         <a id="main-title" class="navbar-brand" href="#">
            <h1>💾 dunnesquared</h1>
          </a>
+
         <!-- Collapsible menu button on reduced viewports, e.g. phones -->
-           <button
-             class="navbar-toggler"
-             type="button"
-             data-toggle="collapse"
-             data-target="#navbarNav"
-             aria-controls="navbarNav"
-             aria-expanded="false"
-             aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+            <li class="nav-item">
+              <a href="#coding-projects" class="nav-link text-white">Coding Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#writing-projects" class="nav-link text-white">Writing Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-info"class="nav-link text-white">Contact Info</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-       <div class="collapse navbar-collapse " id="navbarNav">
-         <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
-           <li class="nav-item">
-             <a href="#coding-projects" class="nav-link text-white">Coding Projects</a>
-           </li>
-           <li class="nav-item">
-             <a href="#writing-projects" class="nav-link text-white">Writing Projects</a>
-           </li>
-           <li class="nav-item">
-             <a href="#contact-info"class="nav-link text-white">Contact Info</a>
-           </li>
-         </ul>
-       </div>
-     </nav>
 
-
-
+     <!-- *************************** BODY TEXT *************************** -->
       <main class="main-content-container">
         <!-- Making use of BS4's grid layout to ensure site changes as a
              function of viewport (screen) size -->
         
-        <!-- WELCOME -->
+        <!-- *************************** WELCOME *************************** -->
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <h3>Welcome!</h3>
@@ -113,13 +125,14 @@
          </div>
         </div>
       
-        <!--PROJECTS-->
+        <!-- *************************** CODING PROJECTS *************************** -->
         <hr>
         <div class="row">
           <div id="coding-projects" class="col-lg-12 col-md-12 col-sm-12">
             <h3>Coding Projects</h3>
           </div>
         </div>
+
         <div class="row">
           <div id="coding-projects" class="col-lg-12 col-md-12 col-sm-12">
             <div>
@@ -129,66 +142,72 @@
               which I hope to share soon.</div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
 
             <section id="project-items">
+
               <div class="project-item">
-                  <strong>Cinescout 🎞</strong>
-                  <small>
-                    (<a href="https://dunnesquared.pythonanywhere.com/">demo</a> /
-                    <a href="https://vimeo.com/513508836">screencast</a> /
-                    <a href="https://github.com/dunnesquared/cinescout">repo</a>)
-                  </small>
-                  <div>
-                      IMDB-like website where users can learn about films and read movie reviews
-                      thanks to API data from <a href="https://www.themoviedb.org/", target="_blank">
-                        The Movie Database</a> and
-                        <a href="https://nytimes.com" target="_blank"> The New York Times.</a>
-                        Users can also browse through a list of critically-acclaimed films from
-                        <a href="https://criterion.com" target="_blank">The Criterion Collection</a>, 
-                        as well as save movies to a 'What-To-Watch' list for later reference.
-                    </div>
+                <strong>Cinescout 🎞</strong>
+                <small>
+                  (<a href="https://dunnesquared.pythonanywhere.com/">demo</a> /
+                  <a href="https://vimeo.com/513508836">screencast</a> /
+                  <a href="https://github.com/dunnesquared/cinescout">repo</a>)
+                </small>
+                <div>
+                    IMDB-like website where users can learn about films and read movie reviews
+                    thanks to API data from <a href="https://www.themoviedb.org/", target="_blank">
+                      The Movie Database</a> and
+                      <a href="https://nytimes.com" target="_blank"> The New York Times.</a>
+                      Users can also browse through a list of critically-acclaimed films from
+                      <a href="https://criterion.com" target="_blank">The Criterion Collection</a>, 
+                      as well as save movies to a 'What-To-Watch' list for later reference.
                 </div>
+              </div>
 
-                <div class="project-item">  
-                  <strong>Sentence Cow 🐄</strong>
-                  <small>
-                    (<a href="https://zaxel9.pythonanywhere.com/sentencecow">demo</a> /
-                    <a href="https://github.com/dunnesquared/sentencecow">repo</a>)
-                  </small>
-                  <div>
-                      Web tool that extracts sentences from a text.
-                  </div>
+              <div class="project-item">  
+                <strong>Sentence Cow 🐄</strong>
+                <small>
+                  (<a href="https://zaxel9.pythonanywhere.com/sentencecow">demo</a> /
+                  <a href="https://github.com/dunnesquared/sentencecow">repo</a>)
+                </small>
+                <div>
+                    Web tool that extracts sentences from a text.
                 </div>
+              </div>
 
-                <div class="project-item">
-                  <strong>Shadow House 👻</strong>
-                  <small>
-                    (<a href="https://github.com/dunnesquared/shadowhouse">repo</a>)
-                  </small>
-                  <div>
-                      A mini text game of a supernatural persuasion.
-                  </div>
+              <div class="project-item">
+                <strong>Shadow House 👻</strong>
+                <small>
+                  (<a href="https://github.com/dunnesquared/shadowhouse">repo</a>)
+                </small>
+                <div>
+                    A mini text game of a supernatural persuasion.
                 </div>
+              </div>
                 
-                <div class="project-item">
-                  <strong>sqlite3backup 📀</strong>
-                  <small>
-                    (<a href="https://github.com/dunnesquared/sqlite3backup">repo</a>)
-                  </small>
-                  <div>
-                      Python script and module that backs up an sqlite3 database file using 
-                      sqlite3's
-                      <a href="https://docs.python.org/3.8/library/sqlite3.html" 
-                        target="_blank">
-                        backup</a> function.
-                  </div>
+              <div class="project-item">
+                <strong>sqlite3backup 📀</strong>
+                <small>
+                  (<a href="https://github.com/dunnesquared/sqlite3backup">repo</a>)
+                </small>
+                <div>
+                    Python script and module that backs up an sqlite3 database file using 
+                    sqlite3's
+                    <a href="https://docs.python.org/3.8/library/sqlite3.html" 
+                      target="_blank">
+                      backup</a> function.
                 </div>
+              </div>
+
             </section>
+
+          </div>
+        </div>
           
-         <!--Writing Projects-->
-         <hr>
+        <!-- *************************** WRITING PROJECTS *************************** -->
+        <hr>
         <div class="row">
           <div id="writing-projects" class="col-lg-12 col-md-12 col-sm-12">
             <h3>Writing Projects</h3>
@@ -199,20 +218,20 @@
           <div class="col-lg-12 col-md-12 col-sm-12">
             <section>
               <div>
-                  <strong>Mathwoods 🌲</strong>
-                  <small>
-                    (<a href="https://mathwoods.com/">blog</a>)
-                  </small>
-                  <div>
-                      My old blog about math and progamming I kept up for about a year or two. 
-                      Read my posts on struggles with the obvious and mathing in Python.
-                  </div>
+                <strong>Mathwoods 🌲</strong>
+                <small>
+                  (<a href="https://mathwoods.com/">blog</a>)
+                </small>
+                <div>
+                  My old blog about math and progamming I kept up for about a year or two. 
+                  Read my posts on struggles with the obvious and mathing in Python.
+                </div>
               </div>
             </section>
           </div>
         </div>
 
-        <!--Contact-->
+        <!-- *************************** CONTACT  *************************** -->
         <hr>
         <div class="row">
           <div id="contact-info" class="col-lg-12 col-md-12 col-sm-12">
@@ -231,23 +250,27 @@
           </div>
         </div>
 
-         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <section id="contact-items">
-                <div>
-                  📬 <a href="mailto:dunnesquared@gmail.com">Email</a>
-                </div>
-                <div>
-                  👾 <a href="https://github.com/dunnesquared">GitHub</a>
-                </div>
-                <div>
-                  💼 <a href="https://www.linkedin.com/in/alexander-dunne-4960235a/">LinkedIn</a>
-                </div>   
-              </section>
-            </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <section id="contact-items">
+              <div>
+                📬 <a href="mailto:dunnesquared@gmail.com">Email</a>
+              </div>
+              <div>
+                👾 <a href="https://github.com/dunnesquared">GitHub</a>
+              </div>
+              <div>
+                💼 <a href="https://www.linkedin.com/in/alexander-dunne-4960235a/">LinkedIn</a>
+              </div>   
+            </section>
           </div>
-    </main>
-  </div>
-  <br>
+        </div>
+
+      </main>
+    </div>
+
+    <br>
+
   </body>
+  
 </html>

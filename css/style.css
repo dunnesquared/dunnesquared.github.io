@@ -40,12 +40,24 @@ nav li:hover {
   margin-top: 1em;
 }
 
+#coding-projects {
+  margin-top: 2em;
+}
+
+#writing-projects {
+  margin-top: 2em;
+}
+
 #project-items {
   margin-top: 1em;
 }
 
 .project-item {
   margin-top: 1em;
+}
+
+#contact-info {
+  margin-top: 2em;
 }
 
 #contact-items {

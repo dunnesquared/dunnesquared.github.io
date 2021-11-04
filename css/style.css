@@ -34,6 +34,9 @@ nav li:hover {
   background-color: darkslategray;
   border-radius: 20px;
 }
+#mynavbar-title{
+  font-size: x-large;
+}
 
 /* main content */
 .main-content-container {
